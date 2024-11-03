@@ -1,6 +1,6 @@
-@forward '../css/font-awesome-pro.css';
-@forward '../css/flaticon_shofy.css';
-@forward '../css/animate.css';
-@forward 'theme';
-@forward 'components';
-@forward 'layout';
+@import 'public/assets/css/font-awesome-pro.css';
+@import 'public/assets/css/flaticon_shofy.css';
+@import 'public/assets/css/animate.css';
+@forward 'public/assets/scss/theme';
+@forward 'public/assets/scss/components';
+@forward 'public/assets/scss/layout';
