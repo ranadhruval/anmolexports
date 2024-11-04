@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant Jewels - Fine Jewelry Collection</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Elegant Jewels</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#collection">Collection</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Timeless Beauty</h1>
+            <p>Discover our exclusive collection of handcrafted jewelry</p>
+            <a href="#collection" class="cta-button">Shop Now</a>
+        </div>
+    </section>
+
+    <section id="collection" class="products">
+        <h2>Featured Collection</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="images/necklace1.jpg" alt="Diamond Necklace">
+                <h3>Diamond Necklace</h3>
+                <p>$999</p>
+                <button class="buy-now" onclick="initiatePayment(999, 'Diamond Necklace')">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <img src="images/ring1.jpg" alt="Sapphire Ring">
+                <h3>Sapphire Ring</h3>
+                <p>$799</p>
+                <button class="buy-now" onclick="initiatePayment(799, 'Sapphire Ring')">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <img src="images/earrings1.jpg" alt="Pearl Earrings">
+                <h3>Pearl Earrings</h3>
+                <p>$599</p>
+                <button class="buy-now" onclick="initiatePayment(599, 'Pearl Earrings')">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Elegant Jewels has been crafting fine jewelry since 1990. Our commitment to quality and craftsmanship has made us a trusted name in the industry.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p><i class="fas fa-phone"></i> +1 234 567 8900</p>
+            <p><i class="fas fa-envelope"></i> info@elegantjewels.com</p>
+            <p><i class="fas fa-location-dot"></i> 123 Jewelry Lane, Diamond City</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Elegant Jewels. All rights reserved.</p>
+    </footer>
+
+    <!-- PayU Payment Gateway Integration -->
+    <script src="https://secure.payu.in/js/sdk.js"></script>
+    <script src="payment.js"></script>
+</body>
+</html> 
